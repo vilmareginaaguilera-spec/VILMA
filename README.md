@@ -45,4 +45,4 @@ A pipeline está **incompleta**. Os steps de segurança precisam ser implementad
 - **Resultado:** Só acontece se todos os steps anteriores passarem.
 
 ## URL de Produção
-> (https://github.com/vilmareginaaguilera-spec/VILMA)
+> https://github.com/vilmareginaaguilera-spec/VILMA.git
