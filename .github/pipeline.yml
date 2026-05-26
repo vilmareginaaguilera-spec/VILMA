@@ -48,7 +48,7 @@ jobs:
         
 
       # ❌ PASSO 5: IMPLEMENTE AQUI — SCA com Grype
-      
+      O Grype analisa o arquivo de dependências (como package.json, requirements.txt ou go.mod) ou a imagem Docker. Como o requisito pede para quebrar o build em vulnerabilidades Médias ou superiores, usamos a flag --fail-on.
       - name: Dependency Vulnerability Scan (Grype)
         uses: anchore/scan-action@v3
         with:
