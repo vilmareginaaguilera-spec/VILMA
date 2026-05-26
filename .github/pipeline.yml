@@ -30,6 +30,7 @@ jobs:
           echo "Build OK!"
 
       # ❌ PASSO 3: IMPLEMENTE AQUI — Secrets Scanning com Gitleaks
+      O Gitleaks vai varrer o histórico do Git em busca de chaves privadas, tokens e senhas expostas.
       - name: Secrets Scanning (Gitleaks)
         uses: gitleaks/gitleaks-action@v2
         with:
@@ -37,6 +38,7 @@ jobs:
           
 
       # ❌ PASSO 4: IMPLEMENTE AQUI — SAST com Semgrep
+      O Semgrep analisa o código-fonte que você escreveu.
       - name: Static Analysis (Semgrep)
         uses: returntocorp/semgrep-action@v1
         with:
@@ -46,6 +48,7 @@ jobs:
         
 
       # ❌ PASSO 5: IMPLEMENTE AQUI — SCA com Grype
+      
       - name: Dependency Vulnerability Scan (Grype)
         uses: anchore/scan-action@v3
         with:
